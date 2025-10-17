@@ -346,7 +346,7 @@ utils::Scalar internal_forces::muscles::HillType::getForceFromActivation(
     damping_param = 0;
   }
   return characteristics().forceIsoMax() *
-         (emg.activation() * *m_FlCE * *m_FvCE + *m_FlPE + damping_param) *
+         (emg.activation() * *m_FlCE * *m_FvCE) *
          cosAngle;
 }
 
